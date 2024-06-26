@@ -2,8 +2,12 @@ Tricks and hints by - Amram E. Dworkin
 ## Azure Tips & Tricks
 <table style="width:100%">
   <tr>
-    <th style="width:50%"><a href="#azure-resource-tagging-automation">Azure Resource Tagging Automation</a></th>
-    <th style="width:50%"><a href="#azure-key-vault-secret-versioning">Azure Key Vault Secret Versioning</a></th>
+    <th style="width:50%">
+      <a href="#azure-resource-tagging-automation">Azure Resource Tagging Automation</a>
+    </th>
+    <th style="width:50%">
+      <a href="#azure-key-vault-secret-versioning">Azure Key Vault Secret Versioning</a>
+    </th>
   </tr>
   <tr>
     <td>Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently.</td>
@@ -14,13 +18,23 @@ Tricks and hints by - Amram E. Dworkin
     <td>Tags: Azure, Secret Management, Key Vault, Security</td>
   </tr>
   <tr>
-    <td><a href="#azure-resource-tagging-automation">Read more</a></td>
-    <td><a href="#azure-key-vault-secret-versioning">Read more</a></td>
+    <td>
+      <a href="#azure-resource-tagging-automation">Read more</a>
+    </td>
+    <td>
+      <a href="#azure-key-vault-secret-versioning">Read more</a>
+    </td>
   </tr>
-  <tr style="background-color:#f0f0f0;"><td /></td>tr>
+  <tr style="background-color:#f0f0f0;">
+    <td />
+    </td>tr>
   <tr>
-    <th style="width:50%"><a href="#azure-function-proxies">Azure Function Proxies</a></th>
-    <th style="width:50%"><a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a></th>
+    <th style="width:50%">
+      <a href="#azure-function-proxies">Azure Function Proxies</a>
+    </th>
+    <th style="width:50%">
+      <a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a>
+    </th>
   </tr>
   <tr>
     <td>Use Azure Function Proxies to create a unified API surface for multiple backend services.</td>
@@ -31,12 +45,20 @@ Tricks and hints by - Amram E. Dworkin
     <td>Tags: Azure, Blob Storage, Static Websites, Web Hosting</td>
   </tr>
   <tr>
-    <td><a href="#azure-function-proxies">Read more</a></td>
-    <td><a href="#azure-blob-storage-static-website-hosting">Read more</a></td>
+    <td>
+      <a href="#azure-function-proxies">Read more</a>
+    </td>
+    <td>
+      <a href="#azure-blob-storage-static-website-hosting">Read more</a>
+    </td>
   </tr>
-  <tr style="background-color:#f0f0f0;"><td /></td>tr>
+  <tr style="background-color:#f0f0f0;">
+    <td />
+    </td>tr>
   <tr>
-    <th style="width:50%"><a href="#azure-devtest-labs-for-cost-management">Azure DevTest Labs for Cost Management</a></th>
+    <th style="width:50%">
+      <a href="#azure-devtest-labs-for-cost-management">Azure DevTest Labs for Cost Management</a>
+    </th>
     <th style="width:50%"></th>
   </tr>
   <tr>
@@ -48,33 +70,46 @@ Tricks and hints by - Amram E. Dworkin
     <td></td>
   </tr>
   <tr>
-    <td><a href="#azure-devtest-labs-for-cost-management">Read more</a></td>
+    <td>
+      <a href="#azure-devtest-labs-for-cost-management">Read more</a>
+    </td>
     <td></td>
   </tr>
-</table>
-
-## Uncategorized Tips & Tricks
-<table style="width:100%">
+</table> ## Uncategorized Tips & Tricks <table style="width:100%">
   <tr>
-    <th style="width:50% important!"><a href="#linking-external-folders-to-a-visual-studio-project">Linking External Folders to a Visual Studio Project</a></th>
-    <th style="width:50% important!"><a href="#bing-search-modifiers">Bing Search Modifiers</a></th>
+    <th style="width:50% important!">
+      <a href="#linking-external-folders-to-a-visual-studio-project">Linking External Folders to a Visual Studio Project</a>
+    </th>
+    <th style="width:50% important!">
+      <a href="#bing-search-modifiers">Bing Search Modifiers</a>
+    </th>
   </tr>
   <tr>
-    <td>Link a non-project folder to a VS Studio project4.  Can edit, include, etc. files in external folder.  Shows as a regular folder called LinkedFolder (can change name)</td>
-    <td>Bing search modifiers for more efficent searching.  I just need these a lot</td>
+    <td>Link a non-project folder to a VS Studio project4. Can edit, include, etc. files in external folder. Shows as a regular folder called LinkedFolder (can change name)</td>
+    <td>Bing search modifiers for more efficent searching. I just need these a lot</td>
   </tr>
   <tr>
     <td>Tags: C#, Development, VS 2022, CSPROJ, Project Management</td>
     <td>Tags: Bing, Search, Efficiency</td>
   </tr>
   <tr>
-    <td><a href="#azure-resource-tagging-automation">Read more</a></td>
-    <td><a href="#azure-key-vault-secret-versioning">Read more</a></td>
+    <td>
+      <a href="#azure-resource-tagging-automation">Read more</a>
+    </td>
+    <td>
+      <a href="#azure-key-vault-secret-versioning">Read more</a>
+    </td>
   </tr>
-  <tr style="background-color:#f0f0f0;"><td /></td>tr>
+  <tr style="background-color:#f0f0f0;">
+    <td />
+    </td>tr>
   <tr>
-    <th style="width:50%"><a href="#azure-function-proxies">Azure Function Proxies</a></th>
-    <th style="width:50%"><a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a></th>
+    <th style="width:50%">
+      <a href="#azure-function-proxies">Azure Function Proxies</a>
+    </th>
+    <th style="width:50%">
+      <a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a>
+    </th>
   </tr>
   <tr>
     <td>Use Azure Function Proxies to create a unified API surface for multiple backend services.</td>
@@ -85,8 +120,12 @@ Tricks and hints by - Amram E. Dworkin
     <td>Tags: Azure, Blob Storage, Static Websites, Web Hosting</td>
   </tr>
   <tr>
-    <th style="width:50% important!"><a href="#linking-external-folders-to-a-visual-studio-project">Read more</a></th>
-    <th style="width:50% important!"><a href="#bing-search-modifiers">Read more</a></th>
+    <th style="width:50% important!">
+      <a href="#linking-external-folders-to-a-visual-studio-project">Read more</a>
+    </th>
+    <th style="width:50% important!">
+      <a href="#bing-search-modifiers">Read more</a>
+    </th>
   </tr>
 </table>
 
