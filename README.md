@@ -1,4 +1,4 @@
-# Ami's Friend in Need
+Tricks and hints by - Amram E. Dworkin
 ## Azure Tips & Tricks
 <table style="width:100%">
   <tr>
