@@ -1,3 +1,27 @@
+# Azure Tricks Index
+
+| Title | Title |
+|-------|-------|
+| [Azure Resource Tagging Automation](#azure-resource-tagging-automation) | [Azure Key Vault Secret Versioning](#azure-key-vault-secret-versioning) |
+| Description: Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently. | Description: Use versioning in Azure Key Vault to manage different versions of secrets efficiently. |
+| Tags: Azure Policy, Resource Management | Tags: Azure Key Vault, Secret Management |
+| [Read more](#azure-resource-tagging-automation) | [Read more](#azure-key-vault-secret-versioning) |
+
+| Title | Title |
+|-------|-------|
+| [Azure Function Proxies](#azure-function-proxies) | [Azure Blob Storage Static Website Hosting](#azure-blob-storage-static-website-hosting) |
+| Description: Use Azure Function Proxies to create a unified API surface for multiple backend services. | Description: Host a static website directly from Azure Blob Storage. |
+| Tags: Azure Functions, API Management | Tags: Azure Blob Storage, Static Websites |
+| [Read more](#azure-function-proxies) | [Read more](#azure-blob-storage-static-website-hosting) |
+
+| Title | Title |
+|-------|-------|
+| [Azure DevTest Labs for Cost Management](#azure-devtest-labs-for-cost-management) | |
+| Description: Use Azure DevTest Labs to create and manage cost-efficient development and test environments. | |
+| Tags: Azure DevTest Labs, Cost Management | |
+| [Read more](#azure-devtest-labs-for-cost-management) | |
+
+
 # Linking External Folders to a Visual Studio Project
 
 To include an external folder in your Visual Studio project, you can modify the project file to link the folder. This ensures that the files in the external folder are included in the project and can be accessed and managed within Visual Studio.
