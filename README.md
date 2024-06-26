@@ -1,8 +1,7 @@
 # Azure Tricks Index
 
-| Title | Title |
-|-------|-------|
 | [Azure Resource Tagging Automation](#azure-resource-tagging-automation) | [Azure Key Vault Secret Versioning](#azure-key-vault-secret-versioning) |
+|-------|-------|
 | Description: Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently. | Description: Use versioning in Azure Key Vault to manage different versions of secrets efficiently. |
 | Tags: Azure Policy, Resource Management | Tags: Azure Key Vault, Secret Management |
 | [Read more](#azure-resource-tagging-automation) | [Read more](#azure-key-vault-secret-versioning) |
