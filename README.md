@@ -6,8 +6,8 @@
     <th style="width:50%"><a href="#azure-key-vault-secret-versioning">Azure Key Vault Secret Versioning</a></th>
   </tr>
   <tr>
-    <td>Description: Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently.</td>
-    <td>Description: Use versioning in Azure Key Vault to manage different versions of secrets efficiently.</td>
+    <td>Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently.</td>
+    <td>Use versioning in Azure Key Vault to manage different versions of secrets efficiently.</td>
   </tr>
   <tr>
     <td>Tags: Azure, Resource Management, Policy, Tagging</td>
@@ -23,8 +23,8 @@
     <th style="width:50%"><a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a></th>
   </tr>
   <tr>
-    <td>Description: Use Azure Function Proxies to create a unified API surface for multiple backend services.</td>
-    <td>Description: Host a static website directly from Azure Blob Storage.</td>
+    <td>Use Azure Function Proxies to create a unified API surface for multiple backend services.</td>
+    <td>Host a static website directly from Azure Blob Storage.</td>
   </tr>
   <tr>
     <td>Tags: Azure, Functions, API Management, Development</td>
@@ -40,7 +40,7 @@
     <th style="width:50%"></th>
   </tr>
   <tr>
-    <td>Description: Use Azure DevTest Labs to create and manage cost-efficient development and test environments.</td>
+    <td>Use Azure DevTest Labs to create and manage cost-efficient development and test environments.</td>
     <td></td>
   </tr>
   <tr>
@@ -53,19 +53,19 @@
   </tr>
 </table>
 
-## Visual Studio Tips & Tricks
+## Uncategorized Tips & Tricks
 <table style="width:100%">
   <tr>
-    <th style="width:50%"><a href="#azure-resource-tagging-automation">Azure Resource Tagging Automation</a></th>
-    <th style="width:50%"><a href="#azure-key-vault-secret-versioning">Azure Key Vault Secret Versioning</a></th>
+    <th style="width:50% important!"><a href="#linking-external-folders-to-a-visual-studio-project">Linking External Folders to a Visual Studio Project</a></th>
+    <th style="width:50% important!"><a href="#bing-search-modifiers">Bing Search Modifiers</a></th>
   </tr>
   <tr>
-    <td>Description: Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently.</td>
-    <td>Description: Use versioning in Azure Key Vault to manage different versions of secrets efficiently.</td>
+    <td>Link a non-project folder to a VS Studio project4.  Can edit, include, etc. files in external folder.  Shows as a regular folder called LinkedFolder (can change name)</td>
+    <td>Bing search modifiers for more efficent searching.  I just need these a lot</td>
   </tr>
   <tr>
-    <td>Tags: Azure, Resource Management, Policy, Tagging</td>
-    <td>Tags: Azure, Secret Management, Key Vault, Security</td>
+    <td>Tags: C#, Development, VS 2022, CSPROJ, Project Management</td>
+    <td>Tags: Bing, Search, Efficiency</td>
   </tr>
   <tr>
     <td><a href="#azure-resource-tagging-automation">Read more</a></td>
@@ -77,33 +77,16 @@
     <th style="width:50%"><a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a></th>
   </tr>
   <tr>
-    <td>Description: Use Azure Function Proxies to create a unified API surface for multiple backend services.</td>
-    <td>Description: Host a static website directly from Azure Blob Storage.</td>
+    <td>Use Azure Function Proxies to create a unified API surface for multiple backend services.</td>
+    <td>Host a static website directly from Azure Blob Storage.</td>
   </tr>
   <tr>
     <td>Tags: Azure, Functions, API Management, Development</td>
     <td>Tags: Azure, Blob Storage, Static Websites, Web Hosting</td>
   </tr>
   <tr>
-    <td><a href="#azure-function-proxies">Read more</a></td>
-    <td><a href="#azure-blob-storage-static-website-hosting">Read more</a></td>
-  </tr>
-  <tr style="background-color:#f0f0f0;"><td /></td>tr>
-  <tr>
-    <th style="width:50%"><a href="#azure-devtest-labs-for-cost-management">Azure DevTest Labs for Cost Management</a></th>
-    <th style="width:50%"></th>
-  </tr>
-  <tr>
-    <td>Description: Use Azure DevTest Labs to create and manage cost-efficient development and test environments.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Tags: Azure, DevTest Labs, Cost Management, Development</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><a href="#azure-devtest-labs-for-cost-management">Read more</a></td>
-    <td></td>
+    <th style="width:50% important!"><a href="#linking-external-folders-to-a-visual-studio-project">Read more</a></th>
+    <th style="width:50% important!"><a href="#bing-search-modifiers">Read more</a></th>
   </tr>
 </table>
 
