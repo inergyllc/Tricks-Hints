@@ -13,11 +13,11 @@
     <td>Tags: Azure, Resource Management, Policy, Tagging</td>
     <td>Tags: Azure, Secret Management, Key Vault, Security</td>
   </tr>
-  <tr><td /></td>tr>
   <tr>
     <td><a href="#azure-resource-tagging-automation">Read more</a></td>
     <td><a href="#azure-key-vault-secret-versioning">Read more</a></td>
   </tr>
+  <tr><td /></td>tr>
   <tr>
     <th style="width:50%"><a href="#azure-function-proxies">Azure Function Proxies</a></th>
     <th style="width:50%"><a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a></th>
@@ -34,6 +34,7 @@
     <td><a href="#azure-function-proxies">Read more</a></td>
     <td><a href="#azure-blob-storage-static-website-hosting">Read more</a></td>
   </tr>
+  <tr><td /></td>tr>
   <tr>
     <th style="width:50%"><a href="#azure-devtest-labs-for-cost-management">Azure DevTest Labs for Cost Management</a></th>
     <th style="width:50%"></th>
