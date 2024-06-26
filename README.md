@@ -77,7 +77,10 @@ Tricks and hints by - Amram E. Dworkin
     </td>
     <td></td>
   </tr>
-</table> ## Uncategorized Tips & Tricks <table style="width:100%">
+</table> 
+
+## Uncategorized Tips & Tricks 
+<table style="width:100%">
   <tr>
     <th style="width:50% important!">
       <a href="#linking-external-folders-to-a-visual-studio-project">Linking External Folders to a Visual Studio Project</a>
