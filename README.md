@@ -105,33 +105,6 @@ Tricks and hints by - Amram E. Dworkin
       <a href="#azure-key-vault-secret-versioning">Read more</a>
     </td>
   </tr>
-  <tr style="background-color:#f0f0f0;">
-    <td />
-    </td>tr>
-  <tr>
-    <th style="width:50%">
-      <a href="#azure-function-proxies">Azure Function Proxies</a>
-    </th>
-    <th style="width:50%">
-      <a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a>
-    </th>
-  </tr>
-  <tr>
-    <td>Use Azure Function Proxies to create a unified API surface for multiple backend services.</td>
-    <td>Host a static website directly from Azure Blob Storage.</td>
-  </tr>
-  <tr>
-    <td>Tags: Azure, Functions, API Management, Development</td>
-    <td>Tags: Azure, Blob Storage, Static Websites, Web Hosting</td>
-  </tr>
-  <tr>
-    <th style="width:50% important!">
-      <a href="#linking-external-folders-to-a-visual-studio-project">Read more</a>
-    </th>
-    <th style="width:50% important!">
-      <a href="#bing-search-modifiers">Read more</a>
-    </th>
-  </tr>
 </table>
 
 
