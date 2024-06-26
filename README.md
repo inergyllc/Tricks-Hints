@@ -26,8 +26,9 @@ Tricks and hints by - Amram E. Dworkin
     </td>
   </tr>
   <tr style="background-color:#f0f0f0;">
-    <td />
-    </td>tr>
+    <td>
+    </td>
+  </tr>
   <tr>
     <th style="width:50%">
       <a href="#azure-function-proxies">Azure Function Proxies</a>
@@ -53,8 +54,9 @@ Tricks and hints by - Amram E. Dworkin
     </td>
   </tr>
   <tr style="background-color:#f0f0f0;">
-    <td />
-    </td>tr>
+    <td>
+    </td>
+  </tr>
   <tr>
     <th style="width:50%">
       <a href="#azure-devtest-labs-for-cost-management">Azure DevTest Labs for Cost Management</a>
