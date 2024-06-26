@@ -13,7 +13,7 @@
     <td>Tags: Azure, Resource Management, Policy, Tagging</td>
     <td>Tags: Azure, Secret Management, Key Vault, Security</td>
   </tr>
-  <tr />
+  <tr><td /></td>tr>
   <tr>
     <td><a href="#azure-resource-tagging-automation">Read more</a></td>
     <td><a href="#azure-key-vault-secret-versioning">Read more</a></td>
