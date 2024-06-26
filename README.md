@@ -3,23 +3,151 @@
 | [Azure Resource Tagging Automation](#azure-resource-tagging-automation) | [Azure Key Vault Secret Versioning](#azure-key-vault-secret-versioning) |
 |-------|-------|
 | Description: Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently. | Description: Use versioning in Azure Key Vault to manage different versions of secrets efficiently. |
-| Tags: Azure Policy, Resource Management | Tags: Azure Key Vault, Secret Management |
+| Tags: Azure, Resource Management, Policy, Tagging | Tags: Azure, Secret Management, Key Vault, Security |
 | [Read more](#azure-resource-tagging-automation) | [Read more](#azure-key-vault-secret-versioning) |
 
-| Title | Title |
-|-------|-------|
 | [Azure Function Proxies](#azure-function-proxies) | [Azure Blob Storage Static Website Hosting](#azure-blob-storage-static-website-hosting) |
+|-------|-------|
 | Description: Use Azure Function Proxies to create a unified API surface for multiple backend services. | Description: Host a static website directly from Azure Blob Storage. |
-| Tags: Azure Functions, API Management | Tags: Azure Blob Storage, Static Websites |
+| Tags: Azure, Functions, API Management, Development | Tags: Azure, Blob Storage, Static Websites, Web Hosting |
 | [Read more](#azure-function-proxies) | [Read more](#azure-blob-storage-static-website-hosting) |
 
-| Title | Title |
-|-------|-------|
 | [Azure DevTest Labs for Cost Management](#azure-devtest-labs-for-cost-management) | |
+|-------|-------|
 | Description: Use Azure DevTest Labs to create and manage cost-efficient development and test environments. | |
-| Tags: Azure DevTest Labs, Cost Management | |
+| Tags: Azure, DevTest Labs, Cost Management, Development | |
 | [Read more](#azure-devtest-labs-for-cost-management) | |
 
+---
+
+## Azure Resource Tagging Automation
+Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently.
+
+### How to Do It:
+1. **Create an Azure Policy**:
+   - Go to the Azure portal and navigate to "Policy".
+   - Click "Definitions" and then "New policy definition".
+   - Define a policy to automatically add tags, for example, to add a tag `environment=production`.
+   - Use the following policy rule:
+     ```json
+     {
+       "if": {
+         "field": "location",
+         "equals": "westus"
+       },
+       "then": {
+         "effect": "modify",
+         "details": {
+           "roleDefinitionIds": [
+             "/providers/microsoft.authorization/roleDefinitions/00000000-0000-0000-0000-000000000000"
+           ],
+           "operations": [
+             {
+               "operation": "addOrReplace",
+               "field": "tags.environment",
+               "value": "production"
+             }
+           ]
+         }
+       }
+     }
+     ```
+2. **Assign the Policy**:
+   - Go to "Assignments" and click "Assign policy".
+   - Select the policy definition created and assign it to the appropriate scope (subscription/resource group).
+
+**Source**: [Microsoft Documentation - Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview)
+
+---
+
+## Azure Key Vault Secret Versioning
+Use versioning in Azure Key Vault to manage different versions of secrets efficiently.
+
+### How to Do It:
+1. **Create a Secret**:
+   - Navigate to your Key Vault in the Azure portal.
+   - Click on "Secrets" and then "Generate/Import".
+   - Create a secret with a unique name.
+
+2. **Add a New Version of the Secret**:
+   - Click on the secret name.
+   - Click "New Version" and enter the new value.
+
+3. **Accessing Specific Versions**:
+   - Use the Azure CLI to retrieve a specific version:
+     ```sh
+     az keyvault secret show --vault-name <YourKeyVaultName> --name <YourSecretName> --version <SecretVersion>
+     ```
+
+**Source**: [Microsoft Documentation - Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/secrets/about-secrets)
+
+---
+
+## Azure Function Proxies
+Use Azure Function Proxies to create a unified API surface for multiple backend services.
+
+### How to Do It:
+1. **Create an Azure Function App**:
+   - In the Azure portal, create a new Function App.
+
+2. **Enable Proxies**:
+   - In the Function App, go to "Proxies" and click "Add".
+   - Configure a new proxy to forward requests to your backend service. For example:
+     ```json
+     {
+       "$schema": "http://json.schemastore.org/proxies",
+       "proxies": {
+         "myProxy": {
+           "matchCondition": {
+             "route": "/api/{*path}"
+           },
+           "backendUri": "https://mybackend.azurewebsites.net/api/{path}"
+         }
+       }
+     }
+     ```
+
+3. **Test the Proxy**:
+   - Deploy the function app and test the proxy endpoint to ensure it forwards requests correctly.
+
+**Source**: [Microsoft Documentation - Azure Function Proxies](https://docs.microsoft.com/en-us/azure/azure-functions/functions-proxies)
+
+---
+
+## Azure Blob Storage Static Website Hosting
+Host a static website directly from Azure Blob Storage.
+
+### How to Do It:
+1. **Enable Static Website Hosting**:
+   - Go to your storage account in the Azure portal.
+   - Navigate to "Static website" under the "Settings" section.
+   - Enable static website hosting and specify the index document and error document.
+
+2. **Upload Your Website Files**:
+   - Upload your static website files (HTML, CSS, JS, etc.) to the `$web` container created in your storage account.
+
+3. **Access Your Website**:
+   - Access your static website using the primary endpoint URL provided in the static website configuration page.
+
+**Source**: [Microsoft Documentation - Static Website Hosting in Azure Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website)
+
+---
+
+## Azure DevTest Labs for Cost Management
+Use Azure DevTest Labs to create and manage cost-efficient development and test environments.
+
+### How to Do It:
+1. **Create a DevTest Lab**:
+   - In the Azure portal, search for "DevTest Labs" and create a new lab.
+
+2. **Configure Cost Management Policies**:
+   - Set up policies for automatic shutdown and start-up of virtual machines to save costs.
+   - Configure quotas to limit the number of VMs, environments, and resources.
+
+3. **Use Formulas and Artifacts**:
+   - Define reusable formulas and artifacts to quickly create VMs with pre-installed software and configurations.
+
+**Source**: [Microsoft Documentation - Azure DevTest Labs](https://docs.microsoft.com/en-us/azure/devtest-labs/devtest-lab-overview)
 
 # Linking External Folders to a Visual Studio Project
 
