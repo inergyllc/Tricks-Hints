@@ -1,11 +1,10 @@
 # Azure Tricks Index
 
-| [Azure Resource Tagging Automation](#azure-resource-tagging-automation) | [Azure Key Vault Secret Versioning](#azure-key-vault-secret-versioning) |
+| ##[Azure Resource Tagging Automation](#azure-resource-tagging-automation) | [Azure Key Vault Secret Versioning](#azure-key-vault-secret-versioning) |
 |-------|-------|
 | Description: Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently. | Description: Use versioning in Azure Key Vault to manage different versions of secrets efficiently. |
 | Tags: Azure, Resource Management, Policy, Tagging | Tags: Azure, Secret Management, Key Vault, Security |
 | [Read more](#azure-resource-tagging-automation) | [Read more](#azure-key-vault-secret-versioning) |
-
 | [Azure Function Proxies](#azure-function-proxies) | [Azure Blob Storage Static Website Hosting](#azure-blob-storage-static-website-hosting) |
 |-------|-------|
 | Description: Use Azure Function Proxies to create a unified API surface for multiple backend services. | Description: Host a static website directly from Azure Blob Storage. |
