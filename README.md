@@ -1,25 +1,57 @@
 # Azure Tricks Index
 
-| [Azure Resource Tagging Automation](#azure-resource-tagging-automation) | [Azure Key Vault Secret Versioning](#azure-key-vault-secret-versioning) |
-|-------|-------|
-| Description: Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently. | Description: Use versioning in Azure Key Vault to manage different versions of secrets efficiently. |
-| Tags: Azure, Resource Management, Policy, Tagging | Tags: Azure, Secret Management, Key Vault, Security |
-| [Read more](#azure-resource-tagging-automation) | [Read more](#azure-key-vault-secret-versioning) |
-
-| [Azure Function Proxies](#azure-function-proxies) | [Azure Blob Storage Static Website Hosting](#azure-blob-storage-static-website-hosting) |
-|-------|-------|
-| Description: Use Azure Function Proxies to create a unified API surface for multiple backend services. | Description: Host a static website directly from Azure Blob Storage. |
-| Tags: Azure, Functions, API Management, Development | Tags: Azure, Blob Storage, Static Websites, Web Hosting |
-| [Read more](#azure-function-proxies) | [Read more](#azure-blob-storage-static-website-hosting) |
-
-| [Azure DevTest Labs for Cost Management](#azure-devtest-labs-for-cost-management) |  |
-|-------|-------|
-| Description: Use Azure DevTest Labs to create and manage cost-efficient development and test environments. |  |
-| Tags: Azure, DevTest Labs, Cost Management, Development |  |
-| [Read more](#azure-devtest-labs-for-cost-management) |  |
+<table style="width:100%">
+  <tr>
+    <th style="width:50%"><a href="#azure-resource-tagging-automation">Azure Resource Tagging Automation</a></th>
+    <th style="width:50%"><a href="#azure-key-vault-secret-versioning">Azure Key Vault Secret Versioning</a></th>
+  </tr>
+  <tr>
+    <td>Description: Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently.</td>
+    <td>Description: Use versioning in Azure Key Vault to manage different versions of secrets efficiently.</td>
+  </tr>
+  <tr>
+    <td>Tags: Azure, Resource Management, Policy, Tagging</td>
+    <td>Tags: Azure, Secret Management, Key Vault, Security</td>
+  </tr>
+  <tr>
+    <td><a href="#azure-resource-tagging-automation">Read more</a></td>
+    <td><a href="#azure-key-vault-secret-versioning">Read more</a></td>
+  </tr>
+  <tr>
+    <th style="width:50%"><a href="#azure-function-proxies">Azure Function Proxies</a></th>
+    <th style="width:50%"><a href="#azure-blob-storage-static-website-hosting">Azure Blob Storage Static Website Hosting</a></th>
+  </tr>
+  <tr>
+    <td>Description: Use Azure Function Proxies to create a unified API surface for multiple backend services.</td>
+    <td>Description: Host a static website directly from Azure Blob Storage.</td>
+  </tr>
+  <tr>
+    <td>Tags: Azure, Functions, API Management, Development</td>
+    <td>Tags: Azure, Blob Storage, Static Websites, Web Hosting</td>
+  </tr>
+  <tr>
+    <td><a href="#azure-function-proxies">Read more</a></td>
+    <td><a href="#azure-blob-storage-static-website-hosting">Read more</a></td>
+  </tr>
+  <tr>
+    <th style="width:50%"><a href="#azure-devtest-labs-for-cost-management">Azure DevTest Labs for Cost Management</a></th>
+    <th style="width:50%"></th>
+  </tr>
+  <tr>
+    <td>Description: Use Azure DevTest Labs to create and manage cost-efficient development and test environments.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Tags: Azure, DevTest Labs, Cost Management, Development</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="#azure-devtest-labs-for-cost-management">Read more</a></td>
+    <td></td>
+  </tr>
+</table>
 
 ---
-
 ## Azure Resource Tagging Automation
 Automatically apply tags to Azure resources based on policies to manage and organize resources more efficiently.
 
