@@ -79,6 +79,36 @@ Tricks and hints by - Amram E. Dworkin
   </tr>
 </table> 
 
+## Powershell Scripts & Tricks
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+      <a href="#branch-to-new-github-repo">Branch to New Github Repo</a>
+    </th>
+    <th style="width:50%">
+    </th>
+  </tr>
+  <tr>
+    <td>Move a remote github repo to a new branch...not a tag, a branch</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Tags: GitHub, Git, Powershell, Script</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="#branch-to-new-github-repo">Read more</a>
+    </td>
+    <td>
+    </td>
+  </tr>
+      <a href="#azure-devtest-labs-for-cost-management">Read more</a>
+    </td>
+    <td></td>
+  </tr>
+</table> 
+
 ## Uncategorized Tips & Tricks 
 <table style="width:100%">
   <tr>
@@ -371,7 +401,7 @@ Bing search modifiers allow you to refine your searches to get more specific res
 > By using these Bing search modifiers, you can tailor your search queries to find the most relevant and specific information.
 > 
 
-## GitHub Branch PS1
+## Branch to New Github Repo
 ### PowerShell Function: Invoke-BranchGithubRepo
 
 ```powershell
@@ -497,3 +527,4 @@ Invoke-BranchGithubRepo `
     -RepoDescription "Fyxxer Search Azure Functions repo. Branched from oSearch" `
     -FolderOfCodeToBranch "F:\src\3.0\Search" `
     -RepoIsPrivate
+
