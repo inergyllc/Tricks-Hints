@@ -370,3 +370,92 @@ Bing search modifiers allow you to refine your searches to get more specific res
 > 
 > By using these Bing search modifiers, you can tailor your search queries to find the most relevant and specific information.
 > 
+
+## GitHub Branch PS1
+### PowerShell Function: Invoke-BranchGithubRepo
+
+```powershell
+function Invoke-BranchGithubRepo {
+    param (
+        [string]$GitHubUser,
+        [string]$NewRepoName,
+        [string]$OldRepoGitUri,
+        [string]$RepoDescription = "No description provided",
+        [string]$FolderOfCodeToBranch,
+        [switch]$RepoIsPrivate = $true
+    )
+
+    # Clone the original repository if the folder does not exist
+    if (-not (Test-Path $FolderOfCodeToBranch)) {
+        Write-Host "Cloning original repository..."
+        git clone $OldRepoGitUri $FolderOfCodeToBranch
+        if ($LASTEXITCODE -ne 0) {
+            Write-Error "Failed to clone the original repository. Exiting."
+            return
+        }
+    }
+    # Change directory to the cloned repository if not already there
+    if ($PWD.Path -ne (Resolve-Path $FolderOfCodeToBranch).Path) {
+        Set-Location $FolderOfCodeToBranch
+        if ($LASTEXITCODE -ne 0) {
+            Write-Error "Failed to change directory to $FolderOfCodeToBranch. Exiting."
+            return
+        }
+    }
+
+    # Rename the remote of the original repository
+    Write-Host "Renaming the remote 'origin' to 'old-origin'..."
+    git remote rename origin old-origin
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to rename the remote. Exiting."
+        return
+    }
+
+    # Add a new remote pointing to the new repository
+    Write-Host "Adding new remote 'origin' for the new repository..."
+    $ghRepoUrl = "https://github.com/$GitHubUser/$NewRepoName.git"
+    git remote add origin $ghRepoUrl
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to add the new remote. Exiting."
+        return
+    }
+
+    # Push all branches and tags to the new repository
+    Write-Host "Pushing all branches and tags to the new repository..."
+    git push -u origin --all
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to push all branches to the new repository. Exiting."
+        return
+    }
+    git push -u origin --tags
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to push tags to the new repository. Exiting."
+        return
+    }
+
+    # Verify remotes
+    Write-Host "Verifying remotes..."
+    git remote -v
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to verify remotes. Exiting."
+        return
+    }
+
+    # Remove the link to the original repository
+    Write-Host "Removing the old-origin remote..."
+    git remote remove old-origin
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to remove the old-origin remote. Exiting."
+        return
+    }
+
+    Write-Host "Repository branched successfully!"
+}
+
+Invoke-BranchGithubRepo `
+    -GitHubUser "inergyllc" `
+    -NewRepoName "fyxSearch" `
+    -OldRepoGitUri "https://github.com/inergyllc/oSearch.git" `
+    -RepoDescription "Fyxxer Search Azure Functions repo. Branched from oSearch" `
+    -FolderOfCodeToBranch "F:\src\3.0\Search" `
+    -RepoIsPrivate
