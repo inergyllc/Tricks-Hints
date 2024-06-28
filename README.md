@@ -375,6 +375,44 @@ Bing search modifiers allow you to refine your searches to get more specific res
 ### PowerShell Function: Invoke-BranchGithubRepo
 
 ```powershell
+<#
+.SYNOPSIS
+Branches an existing GitHub repository by cloning it, renaming the remote, and pushing to a new repository.
+
+.DESCRIPTION
+The Invoke-BranchGithubRepo function clones an existing GitHub repository to a specified local folder, renames the remote of the original repository, adds a new remote for the new repository, and pushes all branches and tags to the new repository. This function also handles changing directories to the cloned repository and removing the old remote link.
+
+.PARAMETER GitHubUser
+Specifies the GitHub username or organization name where the new repository will be created.
+
+.PARAMETER NewRepoName
+Specifies the name of the new repository to be created.
+
+.PARAMETER OldRepoGitUri
+Specifies the Git URI of the existing repository to be cloned.
+
+.PARAMETER RepoDescription
+Optional. Specifies the description of the new repository. Default is "No description provided".
+
+.PARAMETER FolderOfCodeToBranch
+Specifies the local folder where the repository will be cloned. If the folder does not exist, it will be created.
+
+.PARAMETER RepoIsPrivate
+Optional. Specifies if the new repository should be private. Default is $true.
+
+.EXAMPLE
+Invoke-BranchGithubRepo `
+    -GitHubUser "inergyllc" `
+    -NewRepoName "fyxSearch" `
+    -OldRepoGitUri "https://github.com/inergyllc/oSearch.git" `
+    -RepoDescription "Fyxxer Search Azure Functions repo. Branched from oSearch" `
+    -FolderOfCodeToBranch "F:\src\3.0\Search" `
+    -RepoIsPrivate
+
+.NOTES
+Ensure that Git is installed and configured on your system to use this function. The function performs several Git operations such as clone, remote rename, remote add, and push.
+
+#>
 function Invoke-BranchGithubRepo {
     param (
         [string]$GitHubUser,
