@@ -4,7 +4,6 @@ Tricks and hints by - Amram E. Dworkin
   <tr>
     <th style="width:50%">
       <a href="#azure-resource-tagging-automation">Azure Resource Tagging Automation</a>
-      <img src="https://www.graffiti-empire.com/wp-content/uploads/handstyles/Style_Graffiti-Tag-procreate-1024x1024.jpeg" alt="Small Version of Graffiti" width="30" height="30">
     </th>
     <th style="width:50%">
       <a href="#azure-key-vault-secret-versioning">Azure Key Vault Secret Versioning</a>
